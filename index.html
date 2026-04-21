@@ -85,7 +85,7 @@ nav ul li a:hover {
 }
 
 .hero p {
-  font-size: clamp(18px, 3vw, 24px); /* responsive text */
+  font-size: clamp(18px, 3vw, 24px);
   margin-bottom: 20px;
 }
 
@@ -133,6 +133,36 @@ button {
 button:hover {
   background: #00ffff;
   color: black;
+}
+
+/*   CONTACT SECTION */
+#contact {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-container {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-box {
+  flex: 1;
+}
+
+input, textarea {
+  font-family: 'VT323', monospace;
+  font-size: 16px;
+  padding: 6px;
+  margin-top: 6px;
+  background: black;
+  color: #00ffff;
+  border: 2px solid forestgreen;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
 }
 
 footer {
@@ -207,11 +237,39 @@ marquee {
   <button>JOIN THE MAILING LIST</button>
 </section>
 
-<footer>
-  <p class="blink">© ALL RIGHTS RESERVED </p>
-</footer>
+<!-- CONTACT US -->
+<section id="contact">
+  <h3>📬 Contact Us</h3>
+
+  <div class="contact-container">
+    
+    <div class="contact-box">
+      <label>Email:</label>
+      <input type="email" placeholder="Enter your email">
+    </div>
+
+    <div class="contact-box">
+      <label>File a Complaint:</label>
+      <textarea placeholder="Write your complaint here..."></textarea>
+    </div>
+
+  </div>
+
+  <br>
+  <button onclick="fakeSubmit()">Submit</button>
+</section>
+
+
 
 </main>
 
+<script>
+function fakeSubmit() {
+  alert("Message sent! Your digital voice is heard!");
+}
+</script>
+<footer>
+  <p class="blink">© ALL RIGHTS RESERVED. THEY'RE MINE! </p>
+</footer>
 </body>
 </html>
