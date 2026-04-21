@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How To Website</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+  margin: 0;
+  font-family: 'VT323', monospace;
+  margin-left: 220px;
+  background: linear-gradient(135deg, forestgreen, silver);
+  color: #00ffff;
+}
+
+/* SIDEBAR */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background: black;
+  border-right: 3px solid forestgreen;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 12px;
+  color: #00ffff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background: #ff00cc;
+  color: black;
+}
+
+/* HERO */
+.hero {
+  height: 70vh;
+  background-image: url("article-1280x720.ad9411f0.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 20px; 
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px; 
+  width: 100%;
+}
+
+.hero h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(28px, 5vw, 50px); 
+  color: #ff00cc;
+  text-shadow: 2px 2px #00ffff;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: clamp(18px, 3vw, 24px); /* responsive text */
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  font-size: 20px;
+  background: #00ffff;
+  color: black;
+  border: 2px solid forestgreen;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background: forestgreen;
+  color: white;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 60px;
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+  border: 2px solid #00ffff;
+}
+
+h3 {
+  color: white;
+}
+
+ul {
+  font-size: 22px;
+}
+
+button {
+  background: black;
+  color: #00ffff;
+  border: 2px solid forestgreen;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #00ffff;
+  color: black;
+}
+
+footer {
+  text-align: center;
+  font-size: 18px;
+  color: forestgreen;
+}
+
+/* EXTRA EFFECTS */
+marquee {
+  color: #ffff00;
+  font-size: 24px;
+}
+
+.blink {
+  animation: blink 6s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+  <ul>
+    <li><img src="file_000000005310722fa3285fa315346760.png" style="width:100%"></li>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#merch">Merch</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<marquee>🌴 INTERNET FOR DUMMIES 🌴INTERNET FOR DUMMIES 🌴INTERNET FOR DUMMIES 🌴INTERNET FOR DUMMIES 🌴INTERNET FOR DUMMIES 🌴</marquee>
+
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1 class="blink"> How To Website</h1>
+    <p> and everything you need to start coding!</p>
+    <button>Get Started</button>
+  </div>
+</section>
+
+<section>
+  <ul>
+    <li>💾 Learn how to code</li>
+    <li>📼 What is HTML</li>
+    <li>📟 What do I need to start</li>
+  </ul>
+</section>
+
+<section>
+  <h3>📢 TECHA-TASTIC TESTIMONIALS 📢</h3>
+  <ul>
+    <li>"Thanks to How To Website, I got my own site for my pizza shop"</li>
+    <li>"How To Websites makes web design super easy. Barely an inconvenience"</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Still having doubts? Explore more!</h3>
+
+  <button>ENTER THE WEBSITE</button>
+  <br><br>
+  <button>JOIN THE MAILING LIST</button>
+</section>
+
+<footer>
+  <p class="blink">© ALL RIGHTS RESERVED </p>
+</footer>
+
+</main>
+
+</body>
+</html>
